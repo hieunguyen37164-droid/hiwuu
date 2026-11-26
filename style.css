@@ -1,0 +1,288 @@
+.header {
+    height: 200px;
+    margin-bottom: 5px;
+}
+.anhheader {
+    height: 100%;
+    padding: 0;
+}
+.menuh {
+    background-color: rgb(55, 52, 52);
+    padding: 7px 20px;
+}
+.menu {
+    display: grid;
+    grid-template-columns: auto repeat(3, max-content);
+    justify-content: start;
+    align-items: center;
+    gap: 40px;
+    margin: 0;
+    padding: 0;
+}
+.menu li {
+    list-style: none;
+}
+.menu a {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    padding: 4px 8px;
+}
+.menu li a:hover {
+    background-color: rgb(121, 120, 120);
+}
+@media (max-width: 960px) {
+    .menuh {
+        padding: 7px 12px;
+    }
+    .menu {
+        grid-template-columns: 1fr;
+        justify-content: stretch;
+        gap: 6px;
+    }
+    .menu a {
+        display: block;
+        padding: 8px 10px;
+    }
+}
+.khung-chua {
+    display: grid;
+    grid-template-columns: 1.55fr 0.9fr 0.9fr;
+    gap: 25px;
+    align-items: start;
+    font-family: "Times New Roman", Times, serif;
+    color: black;
+    margin-top: 20px;
+}
+.nen1, .nen2, .nen3 {
+    padding: 25px 20px;
+}
+.khung-chua h2 {
+    font-size: 26px;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 25px;
+}
+.nen1 {
+    background-color: rgb(253, 173, 24);
+}
+.hang-thu {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+}
+.hang-thu img {
+    width: 140px;
+    height: auto;
+    flex-shrink: 0;
+}
+.noi-dung-thu {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.noi-dung-thu p {
+    margin-top: 0;
+    margin-bottom: 12px;
+    line-height: 1.4;
+}
+.nen2 {
+    background-color: green;
+    min-height: 360px;
+}
+.nen2 ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0;
+    line-height: 1.5;
+}
+.nen3 {
+    background-color: yellow;
+    min-height: 330px;
+}
+.nen3 .dam {
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+.khung-chua a {
+    color: black;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 20px;
+}
+.noi-dung-thu a {
+    margin-top: 0;
+    white-space: nowrap;
+}
+.trangchinh {
+    display: grid;
+    grid-template-columns: 240px 1fr 220px;
+    grid-template-areas: "sukien tintuc chucnang";
+    gap: 20px;
+    align-items: start;
+    max-width: 1280px;
+    margin: 9px auto 0;
+}
+.cotsukien {
+    grid-area: sukien;
+    background-color: #a8e4b8;
+    padding: 18px 14px;
+    min-height: 460px;
+}
+.cotsukien h2 {
+    margin: 0 0 18px 0;
+    font-size: 20px;
+    font-weight: normal;
+}
+.mucsukien {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 16px;
+}
+.hopngay {
+    width: 68px;
+    flex-shrink: 0;
+    text-align: center;
+    color: white;
+    font-size: 13px;
+    line-height: 1.25;
+}
+.ngaythang {
+    background-color: red;
+    padding: 3px 4px;
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+}
+.hopngay .nam {
+    background-color: red;
+    padding: 2px 4px;
+}
+.motasukien {
+    font-size: 13px;
+    line-height: 1.35;
+}
+.cottintuc {
+    grid-area: tintuc;
+    background-color: rgb(144, 221, 221);
+    padding: 18px 20px;
+    min-height: 460px;
+}
+.cottintuc h2 {
+    margin: 0 0 18px 0;
+    font-size: 20px;
+    font-weight: normal;
+}
+.tinchinh {
+    display: grid;
+    grid-template-columns: 260px 1fr;
+    gap: 18px;
+    align-items: start;
+    margin-bottom: 20px;
+}
+.anhtinchinh {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    display: block;
+    background-color: white;
+}
+.chutinchinh p {
+    margin: 0 0 10px 0;
+    font-size: 14px;
+    line-height: 1.38;
+}
+.luoitinphu {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 14px 18px;
+}
+.thetinphu {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+}
+.thetinphu img {
+    width: 118px;
+    height: 68px;
+    object-fit: cover;
+    flex-shrink: 0;
+    display: block;
+    background-color: white;
+}
+.thetinphu p {
+    margin: 0;
+    font-size: 13.5px;
+    line-height: 1.3;
+}
+.cotchucnang {
+    grid-area: chucnang;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 12px;
+}
+.nutchucnang {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 18px 14px;
+    color: white;
+    text-decoration: none;
+    min-height: 92px;
+}
+.iconbox {
+    width: 52px;
+    height: 46px;
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, 0.22);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    flex-shrink: 0;
+}
+.nhannut {
+    font-size: 17px;
+    line-height: 1.25;
+}
+.nutxanhla {
+    background-color: rgb(2, 194, 2);
+}
+.nutdocam {
+    background-color: red;
+}
+.nutxanhngoc {
+    background-color: green;
+}
+.nutxanhduong {
+    background-color: cornflowerblue;
+}
+@media (max-width: 960px) {
+    .khung-chua {
+        grid-template-columns: 1fr;
+    }
+    .trangchinh {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "tintuc"
+            "sukien"
+            "chucnang";
+    }
+    .tinchinh {
+        grid-template-columns: 1fr;
+    }
+    .luoitinphu {
+        grid-template-columns: 1fr;
+    }
+}
+footer {
+    background-color: rgb(0, 110, 255);
+    margin-top: 10px;
+    justify-content: center;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    color: white;
+}
